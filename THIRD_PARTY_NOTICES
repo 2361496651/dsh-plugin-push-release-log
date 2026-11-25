@@ -1,0 +1,18 @@
+# Third-party notices
+
+This package vendors the following MIT-licensed libraries so the plugin can run
+inside a DSH profile without installing extra dependencies:
+
+## schemastery
+
+- Files: `lib/vendor/schemastery.js`, `lib/vendor/LICENSE-schemastery`
+- Upstream: https://github.com/shigma/schemastery
+- License: MIT
+
+## cosmokit
+
+- Files: `lib/vendor/cosmokit.js`, `lib/vendor/LICENSE-cosmokit`
+- Upstream: https://github.com/shigma/cosmokit
+- License: MIT
+
+The original license texts are kept next to the vendored files.

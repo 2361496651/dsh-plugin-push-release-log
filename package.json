@@ -1,0 +1,67 @@
+{
+  "name": "dsh-changelog-push",
+  "version": "0.5.0",
+  "description": "Apple 开发者发布日志自动摘要并推送到钉钉（DeepSeek Harness 插件）",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client/client.js",
+    "./icon": "./icon.svg",
+    "./locale/zh-CN.json": "./locale/zh-CN.json",
+    "./locale/en.json": "./locale/en.json",
+    "./locale/zh.json": "./locale/zh.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib",
+    "client",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES",
+    "package.json"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "slots",
+        "settings",
+        "locale",
+        "theme"
+      ]
+    }
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "apple",
+    "release-notes",
+    "dingtalk",
+    "changelog"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2361496651/dsh-plugin-push-release-log.git"
+  },
+  "homepage": "https://github.com/2361496651/dsh-plugin-push-release-log#readme",
+  "bugs": {
+    "url": "https://github.com/2361496651/dsh-plugin-push-release-log/issues"
+  },
+  "author": "zengchunjun",
+  "engines": {
+    "dsh": ">=0.2.2-rc.1"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}

@@ -1,0 +1,4 @@
+- insert:
+    - id: dsh-changelog-push
+      name: dsh-changelog-push
+      config: {}
